@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Header Styling */
+  header {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+  }
+  
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .nav-bar .mobile-nav {
+    display: flex;
+    background-color: white;
+    padding: 0.5em 1em;
+  }
+  
+  .nav-bar #home {
+    margin-right: auto;
+  }
+  
+  .nav-bar .desktop-nav {
+    background-color: rgb(216, 216, 230);
+    padding: 1em;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    display: none;
+    height: auto;
+    transition: background-color 1s ease-in-out 0.5s;
+  }
+  .nav-bar .show {
+    display: block;
+  }
+  
+  .nav-bar .desktop-nav li {
+    padding: 1em;
+  }
+  
+  #menu-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .welcome {
+    text-align: center;
+    padding: 3em 1em;
+    color: white;
+  }
+  
+  .welcome h1 {
+    padding: 1rem 0 2em;
+  }
+  
+  .welcome p {
+    padding-bottom: 3rem;
+  }
+  header #bg-img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  /* main contents styling */
+  .main-contents {
+    margin: 4em auto 0;
+  }
+  
+  .projects h2{
+    text-align: center;
+  }
+  
+  .project{
+    width: 90%;
+    height: 40vh;
+    margin: 1em auto;
+   
+  }
+  .project-info{
+    background-color: rgba(255, 255, 255,.8);
+    text-align: center;
+    color: black;
+  }
+  .project-info h3{
+    width: 45%;
+    margin: auto;
+    border-bottom: 1px solid black;
+  }
+  .quiz{
+    border: 1px solid black;
+    background-image: url("/images/quiz.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  /* About */
+  
+  .about {
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(216, 216, 216);
+  }
+  
+  .about-me {
+    background-color: white;
+    width: 95%;
+    height: 50vh;
+    margin: 1em auto;
+    padding: 0 0.5em;
+    border-radius: 0.5em;
+  }
+  
+  .about-me img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 1em;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: rgb(2, 2, 32);
+    color: white;
+  }
+  
+  .container {
+    width: 90vw;
+    margin: auto;
+    border-bottom: 1px solid white;
+  }
+  
+  .container .content {
+    padding: 1em 2em;
+  }
+  
+  .container .content h3 {
+    text-align: center;
+  }
+  
+  .container .content a {
+    color: rgb(199, 199, 223);
+  }
+  
+  .legal {
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .legal p a {
+    color: rgb(199, 199, 223);
+  }
+  
+  .contact {
+    text-align: center;
+    padding: .5em;
+  }
+  
+  .contact a {
+    padding: 0 0.5em;
+  }
+  .contact a img{
+    width: 20px;
+  }
+  /* Responsive Design */
+  
+  @media (min-width: 425px) {
+    .nav-bar .desktop-nav .mobile-hide {
+      display: flex;
+    }
+  
+    .desktop-hide {
+      display: none;
+    }
+  
+    .container {
+      display: flex;
+      align-content: space-around;
+    }
+  
+    .content {
+      flex: 1 1 auto;
+    }
+  
+    .legal {
+      display: flex;
+      align-content: space-between;
+    }
+  
+    .legal-item {
+      flex: 1 1 auto;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .offers {
+      margin: 1em auto;
+    }
+  
+    .modules {
+      /* width: 100vw; */
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      align-content: space-around;
+    }
+  
+    .about-me {
+      height: auto;
+      margin: auto;
+      padding: 1em 2em;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  
+    .about-me img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-top: 1em;
+    }
+  }
