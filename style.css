@@ -206,7 +206,7 @@ h2{
 }
 .service{
   text-align: center;
-  margin: 3em 0;
+  margin-bottom: 3em;
 }
 .service img{
   width: 200px;
