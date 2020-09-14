@@ -461,4 +461,8 @@ h2{
       border-radius: 10px;
       padding: .4em .5em;
     }
+
+    .info{
+      width: 850px;
+    }
   }
