@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
     <title>ndzalamabasa | Welcome</title>
   </head>
 
@@ -11,26 +13,32 @@
     <!-- Header Showcase -->
     <header>
       <nav class="nav-bar">
-        <ul class="mobile-nav">
-          <li id="home"><a href="">ndzalamabasa</a></li>
-          <li class="mobile-show desktop-hide">
-            <img src="/images/menu_1.ico" alt="" width="25">
-          </li>
-        </ul>
-
-        <ul class="desktop-nav">
-          <li class="mobile-hide desktop-show"><a href="/index.html">Home</a></li>
-          <li class="mobile-hide desktop-show"><a href="#my-projects">Projects</a></li>
-          <li class="mobile-hide desktop-show"><a href="#about-me">About</a></li>
-          <li class="mobile-hide desktop-show"><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="navigation">
+          <ul class="mobile-nav">
+            <li id="home"><a href="">ndzala<span id="surname">mabasa</span></a></li>
+            <li class="mobile-show desktop-hide">
+              <img src="/images/menu_1.ico" alt="" width="25" height="25">
+            </li>
+          </ul>
+  
+          <ul class="desktop-nav">
+            <li class="mobile-hide desktop-show"><img src="/images/home.ico" alt=""><a href="/index.html">Home</a></li>
+            <li class="mobile-hide desktop-show"><img src="/images/projects.ico" alt=""><a href="#my-projects">Projects</a></li>
+            <li class="mobile-hide desktop-show"><img src="/images/info.ico" alt=""><a href="#about-me">About</a></li>
+            <li class="mobile-hide desktop-show"><img src="/images/phone.ico" alt=""><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
       </nav>
 
       <div class="welcome">
-        <h1>Your True Companion in Web Development</h1>
-        <p>Web design, SEO, Hosting...
-          <a href="">more</a>
-        </p>
+        <div class="welcome-msg">
+          <h1>Your True Companion in Web Development</h1>
+          <p>Web design, Search Engine Optimization,
+            <a href="">more</a>
+          </p>
+        </div>
+        
         <div class="proj-cont">
           <a href="#my-projects">Projects</a>
           <a href="#contact">Contact</a>
@@ -41,27 +49,64 @@
 
     <main class="main-contents">
       <section class="projects" id="my-projects">
-          <h2>PROJECTS</h2>
-          <div class="projects-container">
-            <div class=" project quiz">
+          <!-- <h2>PROJECTS</h2> -->
+
+          <!-- <div class="projects-container">
+            <a href="" class=" project quiz">
               <div class="project-info">
                 <h3>-Quiz Game-</h3>
                 <div class="skills">
-                  <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                  <small>
+                    <span class="skill"><small>HTML</small></span> -
+                    <span class="skill"><small>CSS</small></span> -
+                    <span class="skill"><small>JAVASCRIPT</small></span>
+                  </small>
                 </div>
               </div>
-            </div>
-            <div class="project quiz">
-              <h3>Quiz</h3>
-            </div>
-          </div>
+            </a>
+          </div> -->
+          <small id="more-projects">
+            <p>Projects will be uploaded here as they get deployed</p> 
+          </small>
       </section>
+
+      <h2>Services</h2>
+      <section class="services">
+
+        <div class="service">
+          <img src="/images/responsive.svg" alt="">
+          <h4>Responsive Web Design</h4>
+        </div>
+
+        <div class="service">
+          <img src="/images/seo.svg" alt="">
+          <h4>SEO</h4>
+        </div>
+
+        <div class="service">
+          <img src="/images/hosting.svg" alt="">
+          <h4>Hosting</h4>
+        </div>        
+
+        <div class="service">
+          <img src="/images/email_sign.svg" alt="">
+          <h4>Email Signature</h4>
+        </div>
+
+        <div class="service">
+          <img src="/images/web dev.svg" alt="">
+          <h4>Website Design</h4>
+        </div>
+      </section>
+      
     </main>
 
     <section id="about-me">
       <h3>About Ndzalama Mabasa</h3>
+      
           <div class="info">
-            <p>I am a Bachelor of Science in Computer Science and Mathematics graduate, having measured in both desciplines, after completing my degree I took...</p>
+            <img width="150px" height="150px" src="/images/ppic.jpg" alt="Profile picture">
+            <p> Ndzalama Mabasa is a Bachelor of Science in Computer Science and Mathematics graduate, having measured in both desciplines, for the love of computing, after completing my degree I took a decision to explore more on different fields of computer science.</p>
           </div>
     </section>
 
@@ -70,39 +115,40 @@
           <h3>Let's talk</h3>
 
           <div class="direct">
-            <a href="http://info@ndzalamabasa.co.za">info@ndzalamabasa.co.za</a>
-            <a href="tel:+27764477729"> +27 76 447 7729</a>
+            <div class="email">
+              <img src="/images/email.ico" alt=""><a href="http://info@ndzalamabasa.co.za"> info@ndzalamabasa.co.za</a>
+            </div>
+            <div class="phone">
+              <img src="/images/black_phone.ico" alt=""><a href="tel:+27764477729"> +27 76 447 7729</a>
+            </div>
           </div>
           
           <div class="social">
-            <a id="facebook" href=""> 
+            <a id="facebook" href="https://m.facebook.com/ndzalama.mabasa.7965"> 
               <img src="/images/facebook.svg" alt="facebook"/>
             </a>
-            <a href="">
+            <a href="https://m.linkedin.com/in/ndzalama-mabasa-b12883198">
               <img src="/images/linkedin.svg" alt="linkedin">
             </a>
-            <a href="">
+            <a href="https://github.com/ndzalamabasa">
               <img src="/images/github.svg" alt="github"/>
             </a>
-            <a href="">
+            <a href="https://twitter.com/ndzalama_m">
               <img  src="/images/twitter.svg" alt="twitter"/>
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/ndzalamabasa/">
               <img src="/images/instagram.svg"alt="instagram"/>
             </a>
           </div>
         </div>
 
-      <div class="legal">
-        <p class="legal-item" id="copyright">
-          <small>2020 &copy; ndzalamabasa</small>
-        </p>
-        <p class="legal-item" id="terms">
-          <small
-            ><a href="/terms.html"> Terms of Use</a> |
-            <a href="#"> Privacy Policy</a></small
-          >
-        </p>
+      <div class="copyright">
+          <p>
+           <small>&copy; 2020 NDZALAMABASA.</small> 
+          </p>
+          <p>
+            <small>ALL RIGHTS RESERVED.</small>
+          </p>
       </div>
       
     </footer>
