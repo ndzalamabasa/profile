@@ -4,5 +4,6 @@
             - export DEPLOYPATH=/home/ndzalyon/public_html/
             - /bin/cp index.html $DEPLOYPATH
             - /bin/cp style.css $DEPLOYPATH
+            - /bin/cp projects.html $DEPLOYPATH
             - /bin/cp main.js $DEPLOYPATH
             - /bin/cp -R images $DEPLOYPATH
