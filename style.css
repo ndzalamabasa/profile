@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,400&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,16 +9,7 @@
   body {
     font-family: sans-serif;
     overflow-x: hidden;
-  }
-  
-  #surname{
-    border-bottom: 1px solid #ffffff;
-  }
-
-  h1,
-  h2,
-  h3 {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: 'Piazzolla', serif;
   }
   
   li {
@@ -32,40 +25,36 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url("/images/bg.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-color: rgba(0,0,0,.7);
+    /* background: url("/images/bg.jpg"); */
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-color: rgba(0,0,0,.7); */
   }
   
-  /* navigation */
   .nav-bar {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: #000;
-    /* margin-bottom: 50px; */
+    background-color: 
   }
   
-  .navigation{
-    max-width: 90vw;
-    margin: auto;
-  }
+
   .navigation .mobile-nav {
     display: flex;
-    padding: 0.5em 1em 0.2em;
+    margin: 0 auto;
+    padding: 0.5em 1em;
     align-content: center;
+    justify-content: space-between;
   }
   
   .navigation #home {
-    margin-right: auto;
     font-size: 1.5em;
     font-family: 'Lobster', cursive;
     font-weight: 100;
   }
   .navigation #home a{
-    color: #ffffff;
+    color: rgb(2, 2, 50);
     font-size: 1.2em;
   }
 
@@ -83,8 +72,8 @@
     align-content: center;
     width: 100%;
     padding: 1em;
-    background-color: #000;
-    border-top: 1px solid #ffffff;
+    /* background-color: #000; */
+    /* border-top: 1px solid #ffffff; */
   }
   .show .mobile-hide{
     display: flex;
@@ -116,24 +105,28 @@
     text-transform: uppercase;
     padding: 3em 1em;
     height: 100%;
-    background-color: rgba(0,0,0,.7);
-    color: #ffffff;
+    /* background-color: rgba(0,0,0,.7); */
+    /* color: #ffffff; */
   }
 .welcome-msg{
   width: 300px;
   margin: 0 auto;
 }
   .welcome-msg h1 {
+    color: rgb(2, 2, 50);
     padding: 1.5em 0 2em;
     font-size: 2.1em;
-    text-shadow: #000 .1em .2em .2em;
+    text-shadow: #000 .1em .1em .2em;
+    font-weight: 800;
   }
   
   .welcome-msg p {
     text-align: center;
-    padding: 3em 0 1em;
+    padding: 1em 0;
     text-transform: uppercase;
   }
+
+  .welcome-msg p.skills
   .welcome p a{
     color: rgb(152, 152, 236);
     text-decoration: underline;
@@ -144,19 +137,19 @@
     justify-content: space-around;
 
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 50%;
     transform: translate(-50%,-50%);
   }
 
   .proj-cont a{
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgb(2, 2, 50);
     color: #fff;
     font-size: 1.1em;
 
     
-    border-radius: 10px;
-    padding: .4em 1em;
+    border-radius: 5px;
+    padding: .5em 1em;
     margin: .5em 1em;
   }
 
@@ -200,17 +193,43 @@
 
 h2{
   text-align: center;
-  width: 50%;
-  margin: 1em auto;
-  border-bottom: 1px solid #000;
+  margin: 2em auto 1em;
 }
 .service{
+  position: relative;
   text-align: center;
+  border-radius: 5px;
+  width: 70vw;
+  height: 50vh;
+  margin: 0 auto;
+  padding: 2em 0;
+  box-shadow: .1em .1em .3em #000;
   margin-bottom: 3em;
 }
 .service img{
-  width: 200px;
-  height: 200px;
+  width: 70%;
+}
+
+.service h4{
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+
+  letter-spacing: .2em;
+  width: 90%;
+}
+
+.service h4 a{
+  color: #fff;
+  font-size: .8em;
+
+  display: block;
+  margin: 2em auto 0;
+  padding: .5em 1em;
+  width: 75%;
+  border-radius: 5px;
+  background-color: navy;
 }
   /* About */
   
@@ -350,7 +369,7 @@ h2{
 
     header{
       margin: 0 auto;
-      background: url("/images/bg-m.jpg");
+      background: url("/images/bg-l.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }

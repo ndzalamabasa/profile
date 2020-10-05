@@ -14,10 +14,10 @@ for (let item of menuItems) {
     });
 }
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
     
-    const heading = document.querySelector(".welcome");
-    if ((window.scrollY)/350) {
-        navigation.style.backgroundColor = "#000";
-    } 
-});
+//     const heading = document.querySelector(".welcome");
+//     if ((window.scrollY)/350) {
+//         navigation.style.backgroundColor = "#000";
+//     } 
+// });
