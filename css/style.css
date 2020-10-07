@@ -68,9 +68,11 @@ header .welcome .nav-bar .navigation .desktop-nav {
 }
 
 header .welcome-content {
+  position: relative;
   color: #ffffff;
   width: 90vw;
   margin: 3em auto 0;
+  min-height: 561px;
 }
 
 header .welcome-content h1 {
@@ -80,7 +82,7 @@ header .welcome-content h1 {
 }
 
 header .welcome-content #profession {
-  margin-top: 3em;
+  margin-top: 4em;
   text-align: center;
   font-style: italic;
 }
