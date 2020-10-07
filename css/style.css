@@ -100,11 +100,10 @@ header .welcome .nav-bar .show-menu {
 }
 
 header .welcome-content {
-  position: relative;
   color: #ffffff;
   width: 90vw;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 110px;
   height: 100vh;
 }
 
@@ -128,7 +127,7 @@ header .welcome-content #profession #dev {
 header .welcome-content .proj-cont {
   position: absolute;
   display: flex;
-  bottom: 15%;
+  bottom: 13%;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -111,11 +111,11 @@ header{
         }
 
         &-content{
-            position: relative;
+            // position: relative;
             color: #ffffff;
             width: 90vw;
             margin: 0 auto;
-            padding-top: 100px;
+            padding-top: 110px;
             height: 100vh;
 
             h1{
@@ -139,7 +139,7 @@ header{
                 position: absolute;
                 display: flex;
                 // justify-content: space-between;
-                bottom: 15%;
+                bottom: 13%;
                 left: 50%;
                 transform: translateX(-50%);
 
