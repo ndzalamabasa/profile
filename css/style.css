@@ -128,7 +128,7 @@ header .welcome-content #profession #dev {
 header .welcome-content .proj-cont {
   position: absolute;
   display: flex;
-  bottom: 50px;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
