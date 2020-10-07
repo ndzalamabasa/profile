@@ -52,10 +52,6 @@ header .welcome .nav-bar .navigation .mobile-nav #home a {
   color: #ffffff;
 }
 
-header .welcome .nav-bar .navigation .mobile-nav .mobile-menu {
-  color: #ffffff;
-}
-
 header .welcome .nav-bar .navigation .desktop-nav {
   background-color: white;
   position: absolute;
@@ -100,17 +96,17 @@ header .welcome-content .proj-cont a {
   display: inline-block;
   border-radius: 5px;
   background-color: red;
-  padding: .5em 1em;
+  padding: .5em 1.5em;
   color: #ffffff;
   font-weight: 600;
   font-size: 1.2em;
 }
 
 header .welcome-content .proj-cont a#project-btn {
-  margin-right: 1.5em;
+  margin-right: 1em;
 }
 
 header .welcome-content .proj-cont a#contact-btn {
-  margin-left: 1.5em;
+  margin-left: 1em;
 }
 /*# sourceMappingURL=style.css.map */
