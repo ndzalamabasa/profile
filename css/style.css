@@ -52,6 +52,12 @@ header .welcome .nav-bar .navigation .mobile-nav #home a {
   color: #ffffff;
 }
 
+header .welcome .nav-bar .navigation .mobile-nav .mobile-menu {
+  border: 2px solid rgba(255, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 5px;
+}
+
 header .welcome .nav-bar .navigation .desktop-nav {
   background-color: white;
   position: absolute;
