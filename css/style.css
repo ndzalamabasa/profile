@@ -64,12 +64,12 @@ header .welcome .nav-bar .navigation .desktop-nav {
 header .welcome-content {
   color: #ffffff;
   width: 90vw;
-  margin: 2em auto 0;
+  margin: 3em auto 0;
 }
 
 header .welcome-content h1 {
   font-size: 3em;
-  margin-top: .5em;
+  margin-top: 1em;
   text-align: center;
 }
 
