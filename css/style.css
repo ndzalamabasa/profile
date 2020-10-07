@@ -31,8 +31,14 @@ header .welcome {
 }
 
 header .welcome .nav-bar .navigation {
+  position: fixed;
+  top: 0;
+  width: 100vw;
   padding: .5em 0;
   height: 60px;
+  z-index: 10;
+  background-color: #000;
+  box-shadow: 0 0 .1em red;
 }
 
 header .welcome .nav-bar .navigation .mobile-nav {
@@ -58,21 +64,47 @@ header .welcome .nav-bar .navigation .mobile-nav .mobile-menu img {
   padding: 5px 10px;
 }
 
-header .welcome .nav-bar .navigation .desktop-nav {
-  background-color: white;
+header .welcome .nav-bar .mobile-hide {
+  background-color: red;
   position: absolute;
-  top: 54px;
-  width: 80vw;
-  height: 100vh;
-  transform: translateX(-100%);
+  top: 60px;
+  width: 100vw;
+  z-index: 5;
+  transform: translateY(-125%);
+  transition: transform .3s ease-in;
+}
+
+header .welcome .nav-bar .mobile-hide .desktop-nav {
+  width: 90vw;
+  margin: 1em auto;
+}
+
+header .welcome .nav-bar .mobile-hide .desktop-nav li {
+  padding: 1em 0;
+  font-size: 1.2em;
+}
+
+header .welcome .nav-bar .mobile-hide .desktop-nav li a {
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+header .welcome .nav-bar .mobile-hide .desktop-nav li a i {
+  padding-right: 2em;
+  width: 25px;
+}
+
+header .welcome .nav-bar .show-menu {
+  transform: translateY(0);
 }
 
 header .welcome-content {
   position: relative;
   color: #ffffff;
   width: 90vw;
-  margin: 3em auto 0;
-  min-height: 561px;
+  margin: 0 auto;
+  padding-top: 100px;
+  min-height: 568px;
 }
 
 header .welcome-content h1 {

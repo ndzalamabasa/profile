@@ -37,8 +37,15 @@ header{
             // background-color: red;
             .navigation{
     
+                position: fixed;
+                top: 0;
+                width: 100vw;
                 padding: .5em 0;
                 height: 60px;
+                z-index: 10;
+                background-color: #000;
+
+                box-shadow: 0 0 .1em red;
                 .mobile-nav{
                     display: flex;
                     justify-content: space-between;
@@ -64,23 +71,51 @@ header{
                     
                 }
     
+                
+            }
+
+            .mobile-hide{
+                background-color: red;
+                position: absolute;
+                top: 60px;
+                width: 100vw;
+                z-index: 5;
+                transform: translateY(-125%);
+                transition: transform .3s ease-in;
+                
                 .desktop-nav{
-                    background-color: white;
-                    position: absolute;
-                    top: 54px;
-                    width: 80vw;
-                    height: 100vh;
-                    transform: translateX(-100%);
+                    width: 90vw;
+                    margin: 1em auto;
+    
+                    li{
+                        padding: 1em 0;
+                        font-size: 1.2em;
+                        a{
+                            color: #ffffff;
+                            font-size: 1.2em;
+    
+                            i{
+                                padding-right: 2em;
+                                width: 25px;
+                            }
+                        }
+                    }
                 }
             }
+
+            .show-menu{
+                transform: translateY(0);
+            }
+            
         }
 
         &-content{
             position: relative;
             color: #ffffff;
             width: 90vw;
-            margin: 3em auto 0;
-            min-height: 561px;
+            margin: 0 auto;
+            padding-top: 100px;
+            min-height: 568px;
 
             h1{
                 font-size: 3em;
