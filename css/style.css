@@ -154,7 +154,7 @@ header .welcome-content .proj-cont a#contact-btn {
 
 header .welcome-content .scroll {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
