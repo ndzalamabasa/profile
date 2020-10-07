@@ -26,12 +26,12 @@ header{
     background: url("/images/mobile-bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
-    min-height: 100vh;
+    min-height: 580px;
+    height: 100vh;
 
     .welcome{
         position: relative;
-        min-height: 100vh;
+        min-height: 100%;
         background-color: rgba(0, 0, 0, 0.70);
 
         .nav-bar{
@@ -116,7 +116,7 @@ header{
             width: 90vw;
             margin: 0 auto;
             padding-top: 110px;
-            height: 100vh;
+            min-height: 100vh;
 
             h1{
                 font-size: 3em;
@@ -139,9 +139,10 @@ header{
                 position: absolute;
                 display: flex;
                 // justify-content: space-between;
-                bottom: 13%;
+                bottom: 15%;
                 left: 50%;
                 transform: translateX(-50%);
+                overflow-y: auto;
 
                 a{
                     display: inline-block;
