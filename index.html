@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
@@ -13,41 +13,46 @@
   <body>
     <!-- Header Showcase -->
     <header>
-      <nav class="nav-bar">
-        <div class="navigation">
-          <ul class="mobile-nav">
-            <li id="home"><a href="">ndzalamabasa</a></li>
-            <li class="mobile-show desktop-hide">
-              <span style="font-size: 25px;"><i class="fas fa-bars"></i></span>
-            </li>
-          </ul>
-
-          <ul class="desktop-nav">
-            <li class="mobile-hide desktop-show"><img src="/images/home.ico" alt=""><a href="/index.html">Home</a></li>
-            <li class="mobile-hide desktop-show"><img src="/images/projects.ico" alt=""><a href="#projects">Projects</a></li>
-            <li class="mobile-hide desktop-show"><img src="/images/info.ico" alt=""><a href="#about-me">About</a></li>
-            <li class="mobile-hide desktop-show"><img src="/images/phone.ico" alt=""><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        
-      </nav>
-
       <div class="welcome">
-        <div class="welcome-msg">
-          <p>Hi I'm</p>
-          <h1>MABASA NDZALAMA</h1>
-          <p class="skills">Web <span>Designer</span><span>Developer</span></p>
+        <nav class="nav-bar">
+          <div class="navigation">
+            <ul class="mobile-nav">
+              <li id="home"><a href="">Ndzalamabasa</a></li>
+              <li class="mobile-menu desktop-hide">
+                <img src="/images/menu.svg" alt="">
+              </li>
+            </ul>
+  
+            <ul class="desktop-nav">
+              <li class="mobile-hide desktop-show"><img src="/images/home.ico" alt=""><a href="/index.html">My Work</a></li>
+              <li class="mobile-hide desktop-show"><img src="/images/projects.ico" alt=""><a href="#projects">Contact</a></li>
+              <!-- <li class="mobile-hide desktop-show"><img src="/images/info.ico" alt=""><a href="#about-me">About</a></li> -->
+              <li class="mobile-hide desktop-show"><img src="/images/phone.ico" alt=""><a href="#contact">Resume</a></li>
+            </ul>
+          </div>
+          
+        </nav>
+  
+        <div class="welcome-content">
+          <div class="welcome-msg">
+            <h2>Hi I'm</h2>
+            <h1>MABASA NDZALAMA</h1>
+            <h2 id="profession">Front-End <span id="dev">Web Developer</span></h2>
+            <!-- <p class="skills">Web <span>Designer</span><span>Developer</span></p> -->
+          </div>
+          
+          <div class="proj-cont">
+            <a href="#my-projects" id="project-btn">Projects</a>
+            <a href="#contact" id="contact-btn">Contact</a>
+          </div>
+          
         </div>
-        
-        <div class="proj-cont">
-          <a href="#my-projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-        
       </div>
+      
+
     </header>
 
-    <main class="main-contents">
+    <!-- <main class="main-contents">
       <section class="projects" id="my-projects">
           <!-- <h2>PROJECTS</h2> -->
 
@@ -64,7 +69,7 @@
                 </div>
               </div>
             </a>
-          </div> -->
+          </div>
           <small id="more-projects">
             <p>Projects will be uploaded here as they get deployed</p> 
           </small>
@@ -109,18 +114,18 @@
         </div>
       </section>
       
-    </main>
+    </main> -->
 
-    <section id="about-me">
+    <!-- <section id="about-me">
       <h3>About Ndzalama Mabasa</h3>
       
           <div class="info">
             <img width="150px" height="150px" src="/images/ppic.jpg" alt="Profile picture">
             <p> Ndzalama Mabasa is a Bachelor of Science in Computer Science and Mathematics graduate, having measured in both disciplines, for the love of after completing my degree I took a decision to explore more on the field of computer science.</p>
           </div>
-    </section>
+    </section> -->
 
-    <footer>  
+    <!-- <footer>  
         <div id="contact">
           <h3>Let's talk</h3>
 
@@ -161,7 +166,7 @@
           </p>
       </div>
       
-    </footer>
+    </footer> -->
 
     <script src="main.js"></script>
   </body>

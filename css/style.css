@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url("/images/mobile-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+header .welcome {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .welcome .nav-bar .navigation {
+  padding: .5em 0;
+  height: 60px;
+}
+
+header .welcome .nav-bar .navigation .mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+header .welcome .nav-bar .navigation .mobile-nav #home {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.2em;
+}
+
+header .welcome .nav-bar .navigation .mobile-nav #home a {
+  color: #ffffff;
+}
+
+header .welcome .nav-bar .navigation .mobile-nav .mobile-menu {
+  color: #ffffff;
+}
+
+header .welcome .nav-bar .navigation .desktop-nav {
+  background-color: white;
+  position: absolute;
+  top: 54px;
+  width: 80vw;
+  height: 100vh;
+  transform: translateX(-100%);
+}
+
+header .welcome-content {
+  color: #ffffff;
+  width: 90vw;
+  margin: 2em auto 0;
+}
+
+header .welcome-content h1 {
+  font-size: 3em;
+  margin-top: .5em;
+  text-align: center;
+}
+
+header .welcome-content #profession {
+  margin-top: 2em;
+  text-align: center;
+  font-style: italic;
+}
+
+header .welcome-content #profession #dev {
+  display: block;
+  margin-top: .5em;
+}
+
+header .welcome-content .proj-cont {
+  position: absolute;
+  display: flex;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header .welcome-content .proj-cont a {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: red;
+  padding: .5em 1em;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+header .welcome-content .proj-cont a#project-btn {
+  margin-right: 1.5em;
+}
+
+header .welcome-content .proj-cont a#contact-btn {
+  margin-left: 1.5em;
+}
+/*# sourceMappingURL=style.css.map */
