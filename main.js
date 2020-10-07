@@ -2,11 +2,11 @@ const showMenu = document.querySelector(".mobile-menu");
 const mobileMenu = document.querySelector(".mobile-hide");
 // const menuItems = document.querySelectorAll(".mobile-hide");
 
-const navigation = document.querySelector(".navigation");
+// const navigation = document.querySelector(".navigation");
 
 showMenu.addEventListener('click', function () {
     mobileMenu.classList.toggle("show-menu");
-    navigation.style.backgroundColor = "#000";
+    // navigation.style.backgroundColor = "#000";
 });
 
 for (let item of menuItems) {

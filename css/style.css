@@ -114,7 +114,7 @@ header .welcome-content h1 {
 }
 
 header .welcome-content #profession {
-  margin-top: 4em;
+  margin-top: 3em;
   text-align: center;
   font-style: italic;
 }
@@ -127,7 +127,7 @@ header .welcome-content #profession #dev {
 header .welcome-content .proj-cont {
   position: absolute;
   display: flex;
-  bottom: 50px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
