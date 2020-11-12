@@ -178,21 +178,16 @@ header .welcome-content .scroll {
 .projects .project {
   padding: 1em;
   text-align: center;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .projects .project img {
-  background-color: #ddd;
   width: 100%;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
 }
 
 .projects .project p {
   text-decoration: underline;
-}
-
-.projects img {
-  width: 100%;
 }
 
 .skills .skill {

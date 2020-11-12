@@ -188,22 +188,16 @@ header{
     .project{
         padding: 1em;
         text-align: center;
-        img{
-            background-color: #ddd;
-            width: 100%;
-            box-shadow: 0 2px 3px rgba($color: #000000, $alpha: 0.5);
+        box-shadow: 0 2px 20px rgba($color: #000000, $alpha: 0.5);
             border-radius: 5px;
+        img{  
+            width: 100%;
         }    
 
         p{
             text-decoration: underline;
         }
     }
-
-    img{
-        width: 100%;
-    }
-
 }
 
 .skills{
