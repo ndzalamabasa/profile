@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+    
     <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
-    <title>ndzalamabasa | Welcome</title>
+    <title>ndzalamabasa | Full-Stack Web developer</title>
+    <meta name="description" content="Ndzalama Mabasa is a Full-Stack Web Developer with main focus on Websites Design, SEO and SQL  Database Administration">
   </head>
 
   <body>
@@ -36,7 +39,7 @@
           <div class="welcome-msg">
             <h2>Hi, I'm</h2>
             <h1>NDZALAMA MABASA</h1>
-            <h2 id="profession">Front-End <span id="dev">Web Developer</span></h2>
+            <h2 id="profession">Full-Stack<span id="dev">Web Developer</span></h2>
           </div>
           
           <div class="proj-cont">
@@ -45,137 +48,87 @@
           </div>
 
           <div class="scroll">
-            <!-- <small>scroll for more</small> -->
+            <!--  -->
+            <small>scroll for more</small>
             <i class="fas fa-chevron-down"></i>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="main-contents">
-      <section class="skills">
-        <h2>Need a Website?</h2>
-        <h3>I Create <span id="responsive">Responsive</span><span>Accessible</span><span>Morden</span>websites</h3>
-      </section>
-      <section class="projects" id="my-projects">
-          <h2>PROJECTS</h2>
-
-          <div class="projects-container">
-            <a href="" class=" project quiz">
-              <div class="project-info">
-                <h3>-Quiz Game-</h3>
-                <div class="skills">
-                  <small>
-                    <span class="skill"><small>HTML</small></span> -
-                    <span class="skill"><small>CSS</small></span> -
-                    <span class="skill"><small>JAVASCRIPT</small></span>
-                  </small>
-                </div>
-              </div>
+    <main>
+      
+      <h2>PROJECTS</h2>
+      <section class="projects container" id="my-projects">
+          <div class="project">
+            <a href="https://handyman.netlify.app/" target="blank">
+              <img src="/images/handyman.png" alt="handyman-work">
+                <p>Handyman Installation Website</p>
             </a>
           </div>
-          <small id="more-projects">
-            <p>Projects will be uploaded here as they get deployed</p> 
-          </small>
+
+          <p id="more-projects"><small>Projects are uploaded here as they get deployed</small></p> 
+
       </section>
 
-      <h2></h2>
-      <section class="services">
-
-        <div class="service">
-          <img src="/images/responsive.svg" alt="">
-          <h4>Responsive Web Design
-            <a href="#"> Learn more</a>
-          </h4>
-        </div>
-
-        <div class="service">
-          <img src="/images/seo.svg" alt="">
-          <h4>Search Engine Optimization
-            <a href="#"> Learn more</a>
-          </h4>
-        </div>
-
-        <div class="service">
-          <img src="/images/hosting.svg" alt="">
-          <h4>Hosting
-            <a href="#"> Learn more</a>
-          </h4>
-        </div>        
-
-        <div class="service">
-          <img src="/images/email_sign.svg" alt="">
-          <h4>Email Signature
-            <a href="#"> Learn more</a>
-          </h4>
-        </div>
-
-        <div class="service">
-          <img src="/images/web dev.svg" alt="">
-          <h4>Website Design
-            <a href="#"> Learn more</a>
-          </h4>
-        </div>
-      </section>
-      
-    </main>
-
-    <!-- <section id="about-me">
-      <h3>About Ndzalama Mabasa</h3>
-      
-          <div class="info">
-            <img width="150px" height="150px" src="/images/ppic.jpg" alt="Profile picture">
-            <p> Ndzalama Mabasa is a Bachelor of Science in Computer Science and Mathematics graduate, having measured in both disciplines, for the love of after completing my degree I took a decision to explore more on the field of computer science.</p>
+      <section class="my-skills">
+        <h2>Skills</h2>
+        <div class="skills container">
+          <div class="skill">
+            <img src="/images/web dev.svg" alt="">
+            <h4>Web Development</h4>
           </div>
-    </section> -->
+  
+          <div class="skill">
+            <img src="/images/seo.svg" alt="">
+            <h4>SEO</h4>
+          </div>
+        </div>
+      </section>
 
-    <!-- <footer>  
-      
-        <div id="contact">
-          <h3>Let's talk</h3>
-
-          <div class="direct">
-            <div class="email">
-              <img src="/images/email.ico" alt=""><a href="#">ndzalama@ndzalamabasa.co.za</a>
+      <section id="about-me" class="about container">
+        <h3>About Ndzalama Mabasa</h3>
+        
+            <div class="info">
+              <img width="150px" height="150px" src="/images/ppic.jpg" alt="Profile picture">
+              <p> Ndzalama Mabasa is a Bachelor of Science in Computer Science and Mathematics graduate, having measured in both disciplines, for the love of computing, after completing my degree I took a decision to explore more on different fields of computer science.</p>
             </div>
-            <div class="phone">
-              <img src="/images/black_phone.ico" alt=""><a href="tel:+27764477729"> +27 76 447 7729</a>
-            </div>
+      </section>
+      <section class="languages container">
+        <h3>Languages and Frameworks</h3>
+        <div class="grid lang">
+          <div class="card">
+            <img src="/images/html.svg" alt="">
+            <h4>HTML</h4>
           </div>
           
-          <div class="social">
-            <a id="facebook" href="https://m.facebook.com/ndzalama.mabasa.7965"> 
-              <img src="/images/facebook.svg" alt="facebook"/>
-            </a>
-            <a href="https://m.linkedin.com/in/ndzalama-mabasa-b12883198">
-              <img src="/images/linkedin.svg" alt="linkedin">
-            </a>
-            <a href="https://github.com/ndzalamabasa">
-              <img src="/images/github.svg" alt="github"/>
-            </a>
-            <a href="https://twitter.com/ndzalama_m">
-              <img  src="/images/twitter.svg" alt="twitter"/>
-            </a>
-            <a href="https://www.instagram.com/ndzalamabasa/">
-              <img src="/images/instagram.svg"alt="instagram"/>
-            </a>
+          <div class="card">
+            <img src="/images/css.svg" alt="">
+            <h4>CSS</h4>
+          </div>
+          <div class="card">
+            <img src="/images/javascript.svg" alt="">
+            <h4>JavaScript</h4>
+          </div>
+          <div class="card">
+            <img src="/images/php (1).svg" alt="">
+            <h4>PHP</h4>
+          </div>
+          <div class="card">
+            <img src="/images/mysql.svg" alt="">
+            <h4>MySql</h4>
           </div>
         </div>
+      </section>
+    </main>
 
-      <div class="copyright">
-          <p>
-           <small>&copy; 2020 NDZALAMABASA.</small> 
-          </p>
-          <p>
-            <small>ALL RIGHTS RESERVED.</small>
-          </p>
-      </div>
-      
-    </footer> -->
+    <footer>
 
+    </footer>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script> -->
 
     <script src="/home_animation.js"></script>
     <script src="main.js"></script>

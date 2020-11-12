@@ -9,11 +9,11 @@ showMenu.addEventListener('click', function () {
     // navigation.style.backgroundColor = "#000";
 });
 
-for (let item of menuItems) {
-    item.addEventListener('click', function () {
-        mobileMenu.classList.remove("show");
-    });
-}
+// for (let item of menuItems) {
+//     item.addEventListener('click', function () {
+//         mobileMenu.classList.remove("show");
+//     });
+// }
 
 // window.addEventListener("scroll", () => {
     
