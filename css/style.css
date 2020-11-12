@@ -178,7 +178,7 @@ header .welcome-content .scroll {
 .projects .project {
   padding: 1em;
   text-align: center;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 
@@ -188,6 +188,12 @@ header .welcome-content .scroll {
 
 .projects .project p {
   text-decoration: underline;
+}
+
+#more-projects {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 1.5em;
 }
 
 .skills .skill {
