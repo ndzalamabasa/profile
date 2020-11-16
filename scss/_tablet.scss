@@ -2,4 +2,23 @@
     .grid{
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .projects{
+        flex-direction: row;
+    }
+
+    .skills{
+        flex-direction: row;
+    }
+
+    .about{
+        text-align: center;
+    
+        .info{
+            flex-direction: row;
+        }
+        p{
+            margin-left: 1em;
+        }
+    }
 }

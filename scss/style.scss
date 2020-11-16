@@ -15,6 +15,7 @@ $primary-color: #BA2316;
 
 body{
     font-family: $fontstack;
+    background-color: #ddd;
 }
 
 li{
@@ -22,6 +23,11 @@ li{
 }
 a{
     text-decoration: none;
+}
+
+h2, h3, h4{
+    text-align: center;
+    text-transform: uppercase;
 }
 
 header{
@@ -184,50 +190,89 @@ header{
 
 }
 
+main{
+    min-height: 100vh;
+}
+
+
 .projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
     .project{
+        background-color: #ffffff;
+        position: relative;
+        width: 288px;
+        height: 340px;
+
         padding: 1em;
+        margin: 1em 0;
         text-align: center;
         box-shadow: 0 2px 20px rgba($color: #000000, $alpha: 0.2);
             border-radius: 5px;
+
+            
         img{  
             width: 100%;
+            height: 180px;
         }    
 
         p{
-            text-decoration: underline;
+            margin: 1em 0;
+            font-weight: bold;
+            color: $primary-color;
         }
+    }
+
+    a{
+        position: absolute;
+        bottom: 30px;
+    }
+
+    #link{
+        left: 20px
+    }
+    #repo{
+        right: 20px;
+    }
+
+    .dev-lang{
+        margin: 1em 0 1em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    li{
+        font-size: .7rem;
     }
 }
 
 #more-projects{
     text-align: center;
     color: rgba($color: #000000, $alpha: 0.3);
-    margin: 1.5em;
 }
 
 .skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 
     .skill{
+        background-color: #ffffff;
         width: 100%;
-        padding: 1em;
+        padding: 0 0 1.5em;
+        margin: 1em;
         text-align: center;
+        border-radius: 5px;
     }
 
     img{
         width: 150px;
         height: 150px;
-    }
-}
-
-.about{
-    text-align: center;
-    .info p{
-        text-align: justify;
-    }
-    img{
-        border-radius: 50%;
-        box-shadow: 1px 1px 3px rgba($color: #000000, $alpha: 0.5);
     }
 }
 
@@ -239,6 +284,7 @@ header{
     }
 
     .card{
+        background-color: #ffffff;
         width: 100%;
         max-width: 165px;
         box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.3);
@@ -251,14 +297,80 @@ header{
         height: 100px;
     }
 }
-.container{
-    width: 90vw;
-    margin: 1em auto;
+
+.about{
+    text-align: center;
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .info{
+        margin: 1em auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        padding: 1em 1em;
+        border-radius: 5px;
+
+        width: 100%;
+    }
+    p{
+        text-align: justify;
+        line-height: 20px;
+    }
+    img{
+        border-radius: 50%;
+        box-shadow: 1px 1px 3px rgba($color: #000000, $alpha: 0.5);
+    }
+
+    h4{
+        display: inline-block;
+        color: $primary-color;
+        padding: .2em 0;
+        margin: .5em 0 1em;
+        border-bottom: 2px solid #000;
+    }
 }
 
-h2, h3, h4{
-    text-align: center;
-    text-transform: uppercase;
+.contact{
+    margin: 1em 0;
+    .call{
+        color: $primary-color;
+        text-align: center;
+
+        a{
+            color: $primary-color;
+        }
+    }
+
+    .social{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        margin: 2em 0 0;
+        img{
+            width: 30px;
+        }
+    }
+}
+.container{
+    width: 90vw;
+    margin: 2em auto;
+}
+
+footer{
+    background-color: $primary-color;
+    overflow: auto;
+
+    .copyright{
+        text-align: center;
+        color: #eea4a4;
+    }
 }
 
 @import 'tablet';
+@import 'desktop';

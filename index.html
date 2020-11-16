@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css" />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+    
     
     <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
     <title>ndzalamabasa | Full-Stack Web developer</title>
+    <meta name="keywords" content="Full stack web developer, PHP, JavaScript, HTML, CSS, SQL, MySql and Web Development">
     <meta name="description" content="Ndzalama Mabasa is a Full-Stack Web Developer with main focus on Websites Design, SEO and SQL  Database Administration">
   </head>
 
@@ -58,22 +59,33 @@
 
     <main>
       
-      <h2>PROJECTS</h2>
-      <section class="projects container" id="my-projects">
+      <section class="container" id="my-projects">
+        <h2>PROJECTS</h2>
+        <div class="projects">
           <div class="project handyman">
-            <a href="https://handyman.netlify.app/" target="blank">
               <img src="/images/handyman.png" alt="handyman-work">
-                <p>Handyman Installation Website</p>
-            </a>
+              <p>Handyman Installation <br><span>Website</span></p>
+                <!-- <ul class="dev-lang">
+                  <li>HTML</li>
+                  <li>SASS</li>
+                  <li>JAVASCRIPT</li>
+                  <li>PHP</li>
+                </ul> -->
+
+            <div class="links">
+              <a href="http://handymaninstallation.co.za" target="_blank" rel="noopener noreferrer" id="link">
+                Go to the Site <i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/ndzalamabasa/handyman-installation" target="_blank" rel="noopener noreferrer" id="repo">Repository <i class="fas fa-external-link-alt"></i></a>
+            </div>
           </div>
 
           <p id="more-projects"><small>Projects are uploaded here as they get deployed</small></p> 
-
+        </div>
       </section>
 
-      <section class="my-skills">
-        <h2>Skills</h2>
-        <div class="skills container">
+      <section class="container" id="skills">
+          <h2>Skills</h2>
+        <div class="skills">
           <div class="skill">
             <img src="/images/web dev.svg" alt="">
             <h4>Web Development</h4>
@@ -83,47 +95,100 @@
             <img src="/images/seo.svg" alt="">
             <h4>SEO</h4>
           </div>
-        </div>
+        </div>  
       </section>
 
-      <section id="about-me" class="about container">
-        <h3>About Ndzalama Mabasa</h3>
-        
-            <div class="info">
-              <img width="150px" height="150px" src="/images/ppic.jpg" alt="Profile picture">
-              <p> Ndzalama Mabasa is a Bachelor of Science in Computer Science and Mathematics graduate, having measured in both disciplines, for the love of computing, after completing my degree I took a decision to explore more on different fields of computer science.</p>
-            </div>
-      </section>
-      <section class="languages container">
-        <h3>Languages and Frameworks</h3>
+      <section class="container" id="langs">
+        <div class="languages">
+          <h3>Languages and Frameworks</h3>
         <div class="grid lang">
           <div class="card">
-            <img src="/images/html.svg" alt="">
+            <img src="/images/html.svg" alt="html">
             <h4>HTML</h4>
           </div>
           
           <div class="card">
-            <img src="/images/css.svg" alt="">
+            <img src="/images/css.svg" alt="css">
             <h4>CSS</h4>
           </div>
           <div class="card">
-            <img src="/images/javascript.svg" alt="">
+            <img src="/images/javascript.svg" alt="javascript">
             <h4>JavaScript</h4>
           </div>
           <div class="card">
-            <img src="/images/php (1).svg" alt="">
+            <img src="/images/php (1).svg" alt="php">
             <h4>PHP</h4>
           </div>
           <div class="card">
-            <img src="/images/mysql.svg" alt="">
+            <img src="/images/mysql.svg" alt="mysql">
             <h4>MySql</h4>
           </div>
+          <div class="card">
+            <img src="/images/sass-1.svg" alt="sass">
+            <h4>SASS</h4>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="about-me" class="container">
+        <div class="about">
+          <h3>About Me</h3>
+            <div class="info">
+              <img width="150px" height="150px" src="/images/ppic.jpg" alt="Profile picture">
+              <div class="more-about-me">
+                <h4>Ndzalama Mabasa (Full-Stack Web Developer)</h4>
+                <p>Ndzalama Mabasa is a graduate in Bachelor of Science in Computer Science and Mathematics, having measured in both disciplines, after completing my degree and realizing the rise in need of computing in almost each and every field, I took a decision to explore more on Web Development so to help in solving real world problems though computing.</p>
+              </div>
+              
+            </div>
+        </div>
+      </section>
+
+      <section id="contact-me" class="container">
+        <h3>Contact Me</h3>
+        <div class="contact">
+              <ul class="call">
+                <li><i class="fas fa-phone-alt"></i> <a href="tel:+27764477729">+27 76 447 7729</a></li>
+                <li><i class="fas fa-envelope"></i>  <a href="mailto:ndzalamabasa@gmail.com">ndzalamabasa@gmail.com</a></li>
+              </ul>
+            <div class="social">
+              <a id="facebook" href="https://m.facebook.com/ndzalama.mabasa.7965"> 
+                <img src="/images/facebook.svg" alt="facebook"/>
+              </a>
+              <a href="https://m.linkedin.com/in/ndzalama-mabasa-b12883198">
+                <img src="/images/linkedin.svg" alt="linkedin">
+              </a>
+              <a href="https://github.com/ndzalamabasa">
+                <img src="/images/github.svg" alt="github"/>
+              </a>
+              <a href="https://twitter.com/ndzalama_m">
+                <img  src="/images/twitter.svg" alt="twitter"/>
+              </a>
+              <a href="https://www.instagram.com/ndzalamabasa/">
+                <img src="/images/instagram.svg"alt="instagram"/>
+              </a>
+            </div>
         </div>
       </section>
     </main>
 
     <footer>
-
+      <div class="container">
+        <div class="contact">
+          <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p><small>copyright &copy; 2020 ndzalamabasa.</small></p>
+          <p><small>All Rights Reserved.</small></p>
+        </div>
+      </div>
     </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
