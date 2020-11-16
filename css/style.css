@@ -252,17 +252,17 @@ main {
 }
 
 .skills .skill {
-  background-color: #ffffff;
   width: 100%;
   padding: 0 0 1.5em;
-  margin: 1em;
+  margin: 0 0 1em;
   text-align: center;
   border-radius: 5px;
 }
 
 .skills img {
-  width: 150px;
-  height: 150px;
+  width: 288px;
+  height: 288px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
 }
 
 .languages .lang {
@@ -271,10 +271,8 @@ main {
 }
 
 .languages .card {
-  background-color: #ffffff;
   width: 100%;
   max-width: 165px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 10px;
   margin: 0 auto;
@@ -328,8 +326,10 @@ main {
 }
 
 .contact .call {
-  color: #BA2316;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact .call a {
