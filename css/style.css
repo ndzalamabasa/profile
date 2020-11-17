@@ -26,7 +26,6 @@ html {
 
 body {
   font-family: "Exo 2", sans-serif;
-  background-color: #ddd;
 }
 
 li {
@@ -315,6 +314,7 @@ main {
   background-color: #ffffff;
   padding: 1em 1em;
   border-radius: 5px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
 
