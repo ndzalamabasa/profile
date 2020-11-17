@@ -1,23 +1,86 @@
 @media screen and (min-width: 768px){
+
+    header{
+        background: url("/images/lg-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
     .grid{
         grid-template-columns: repeat(4, 1fr);
     }
+
+    h2{
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+.welcome{
+    .mobile-menu{
+        display: none;
+    }
+
+    .mobile-desktop-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .desktop-nav{
+        position: relative;
+        right: 0;
+        transform: translateY(0);
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        li{
+            width: auto;
+            margin: 0 0 0 1em;
+        }
+
+        .res a{
+            padding: .5em 1em;
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+            box-shadow: 0 0 10px #fff;
+            border-radius: 35px;
+        }
+    }
+}
+ 
 
     .projects{
         flex-direction: row;
     }
 
     .skills{
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr span/2;
+
     }
 
-    .about{
-        text-align: center;
-    
-        .info{
+
+    .contact{
+        margin: 1em 0;
+        .call{
             flex-direction: row;
+            li{
+                margin: 1em;
+            }
         }
-        p{
+    }
+
+    footer{
+        .copyright{
+            display: flex;
+        }
+
+        .rights{
             margin-left: 1em;
         }
     }
