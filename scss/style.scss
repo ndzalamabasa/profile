@@ -49,6 +49,7 @@ header{
     min-height: 580px;
     height: 100vh;
 }
+
     .welcome{
         position: relative;
         min-height: 100%;
@@ -83,16 +84,23 @@ header{
             #home{
                 font-family: $logo-font;
                 font-size: 2.2em;
-
+                
                 a{
+                    display: flex;
+                    align-items: center;
                     color: #ffffff;
                 }
+                span{
+                    margin-left: .2em;
+                }
+                img{
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba($color: #ffffff, $alpha: 0.4);
+                    }
             }
 
-            img{
-                border: 2px solid $primary-color;
-                border-radius: 5px;
-                padding: 5px 10px;
+            .mobile-menu img{
+                margin-top: 8px;
             }                
     }
 
@@ -196,7 +204,6 @@ header{
             }
         }
     }
-
 
 main{
     min-height: 100vh;

@@ -93,13 +93,22 @@ header {
 }
 
 .welcome .mobile-nav #home a {
+  display: flex;
+  align-items: center;
   color: #ffffff;
 }
 
-.welcome .mobile-nav img {
-  border: 2px solid #BA2316;
-  border-radius: 5px;
-  padding: 5px 10px;
+.welcome .mobile-nav #home span {
+  margin-left: .2em;
+}
+
+.welcome .mobile-nav #home img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.welcome .mobile-nav .mobile-menu img {
+  margin-top: 8px;
 }
 
 .welcome .desktop-nav {
@@ -405,6 +414,7 @@ footer .copyright {
   }
   .welcome .desktop-nav {
     position: relative;
+    margin-left: 0.5em;
     right: 0;
     transform: translateY(0);
     width: 100%;
@@ -455,7 +465,7 @@ footer .copyright {
     grid-template-columns: repeat(5, 1fr);
   }
   .welcome .desktop-nav li {
-    margin: 0 0 0 5em;
+    margin: 0 0 0 4em;
   }
   .about {
     text-align: center;
