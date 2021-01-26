@@ -393,7 +393,6 @@ footer .copyright {
 
 @media screen and (min-width: 768px) {
   header {
-    background: url("/images/lg-bg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
