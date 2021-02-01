@@ -44,6 +44,7 @@ h2, h3, h4 {
 h2 {
   font-size: 1.5em;
   font-weight: bold;
+  padding: 0 0 1rem;
 }
 
 header {
@@ -55,15 +56,12 @@ header {
 }
 
 .welcome {
-  position: relative;
-  min-height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .welcome .nav-bar {
   position: fixed;
   top: 0;
-  z-index: 10;
   background-color: #000;
   height: 60px;
   width: 100vw;
@@ -130,12 +128,6 @@ header {
 .welcome .desktop-nav a {
   color: #ffffff;
   font-size: 1.2em;
-}
-
-.welcome .desktop-nav .active a {
-  color: #BA2316;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .welcome .show-menu {
@@ -209,6 +201,7 @@ main {
 }
 
 .projects {
+  margin: 2rem 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -220,7 +213,7 @@ main {
   position: relative;
   width: 288px;
   height: 340px;
-  padding: 1em;
+  padding: 2rem 0;
   margin: 1em 0;
   text-align: center;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
@@ -228,8 +221,9 @@ main {
 }
 
 .projects .project img {
-  width: 100%;
-  height: 180px;
+  width: 250px;
+  height: 120px;
+  margin-bottom: 3rem;
 }
 
 .projects .project p {
@@ -243,11 +237,11 @@ main {
   bottom: 30px;
 }
 
-.projects #link {
+.projects .link {
   left: 20px;
 }
 
-.projects #repo {
+.projects .repo {
   right: 20px;
 }
 
@@ -306,6 +300,10 @@ main {
   height: 100px;
 }
 
+.languages h3 {
+  font-size: 14px;
+}
+
 .about {
   text-align: center;
   max-width: 900px;
@@ -339,10 +337,10 @@ main {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.about h4 {
+.about h3 {
   display: inline-block;
   color: #BA2316;
-  padding: .2em 0;
+  padding: .5em 0 0;
   margin: .5em 0 1em;
   border-bottom: 2px solid #000;
 }
@@ -368,7 +366,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 1em 0 0;
+  margin: 2em 0 0;
 }
 
 .contact .social img {
@@ -388,7 +386,11 @@ footer {
 
 footer .copyright {
   text-align: center;
-  color: #eea4a4;
+  color: #ffffff;
+}
+
+.my {
+  margin: 5rem auto;
 }
 
 @media screen and (min-width: 768px) {
